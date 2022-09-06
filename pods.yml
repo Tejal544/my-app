@@ -1,0 +1,12 @@
+apiVersion: 2.0.0
+kind: Pod
+metadata:
+  name: my-app
+  labels:
+    app: my-app
+spec:
+  containers:
+    - name: my-app
+      image: tejalbhosaledocker/my-app:2.0.0
+      ports:
+        - containerPort: 8282
